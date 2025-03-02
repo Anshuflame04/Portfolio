@@ -1,0 +1,68 @@
+.services {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .services-box {
+    background: #222;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .services-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff5500;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #e04b00;
+  }
+  
+  /* Animated Image */
+  .services-img {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .animated-img {
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

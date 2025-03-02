@@ -1,0 +1,82 @@
+/* Base styles for header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color); /* Replace with your background color */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3%;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--main-color); /* Replace with your logo color */
+    text-decoration: none;
+  }
+  
+  #menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: var(--text-color); /* Replace with your icon color */
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar a {
+    font-size: 1.6rem;
+    color: var(--text-color); /* Replace with your link color */
+    text-decoration: none;
+    margin-left: 2rem;
+  }
+  
+  .navbar a:hover {
+    color: var(--accent-color); /* Add hover effect color */
+  }
+  
+  .navbar.active {
+    display: block; /* This makes the navbar visible when active */
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block; /* Show the menu icon on small screens */
+    }
+  
+    .navbar {
+      display: none; /* Hide the navbar by default */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: var(--bg-color);
+      padding: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar.active {
+      display: block; /* Show the navbar when it's active */
+    }
+  
+    .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  
+    .logo {
+      font-size: 2.2rem;
+    }
+  }
+  
